@@ -15,8 +15,8 @@ public class Lab2 {
 
     public static void main(String[] args) {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter n: ");
         try {
-            System.out.println("Enter n: ");
             n = Integer.parseInt(br.readLine());
         } catch (IOException ioe) {
             ioe.printStackTrace();
