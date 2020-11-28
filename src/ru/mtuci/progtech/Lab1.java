@@ -18,7 +18,7 @@ public class Lab1 {
         return x * Math.pow(Math.exp(x), x) + 2 * Math.sin(x) - Math.sqrt(Math.abs(Math.pow(x, 3) - Math.pow(x, 2)));
     }
 
-    // Основной метод
+    // Уровень А.
     public static void main(String[] args) {
         System.out.println("Аргумент  Значение функции");
         for (x = A; x <= B; x += H) {

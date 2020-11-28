@@ -16,6 +16,7 @@ public class Lab3 {
         return sum;
     }
 
+    // Уровень А.
     public static void main(String[] args){
         // Bon appetit
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

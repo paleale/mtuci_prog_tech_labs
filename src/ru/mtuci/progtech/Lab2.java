@@ -13,6 +13,7 @@ public class Lab2 {
     static int P3=-10;
     static int P4=3;
 
+    // Уровень А.
     public static void main(String[] args) {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter n: ");
