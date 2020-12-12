@@ -10,11 +10,20 @@ public class Lab5 {
     static int A=1;
     static int B=100;
 
+    static void InitArr(int[] a, int N){
+        /* инициализация элементов массива a случайными числами в диапазоне
+        от A до B */
+        Random r = new Random();
+        for(int i = 0; i < N; i++) {
+            a[i] = A + r.nextInt(100) % (B - A + 1);
+        }
+    }
+
     /* вывод массива на экран */
     static void PrintArr(int[] a, int n)
     {
-        int i;
-        for(i = 0; i < n; i++) {
+        System.out.println("Array:");
+        for(int i = 0; i < n; i++) {
             System.out.printf("%d ", a[i]);
         }
     }
@@ -31,19 +40,13 @@ public class Lab5 {
         int[] a;
         a = new int[N];
 
-        /* инициализация элементов массива a случайными числами в диапазоне
-        от A до B */
-        Random r = new Random();
-        for(i = 0; i < N; i++) {
-            a[i] = A + r.nextInt(100) % (B - A + 1);
-        }
-
+        InitArr(a, N);
         PrintArr(a, N);
 
         for(i = count = 0; i < N; i++)
             if (IsSimple(a[i])){
                 count++;
             }
-        System.out.printf("\nCount = %d\n", count);
+        System.out.printf("\nPrime numbers count = %d\n", count);
     }
 }
