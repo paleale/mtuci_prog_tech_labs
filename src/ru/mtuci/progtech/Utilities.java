@@ -14,6 +14,8 @@ public final class Utilities {
             number = Integer.parseInt(br.readLine());
         } catch (IOException ioe) {
             ioe.printStackTrace();
+        } catch (NumberFormatException e) {
+        System.err.println("Unable to format. " + e);
         }
         return number;
     }
