@@ -1,9 +1,5 @@
 package ru.mtuci.progtech;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 public class Lab3 {
     static int n, i;
     static double sum=0;
@@ -18,14 +14,8 @@ public class Lab3 {
 
     // Уровень А.
     public static void main(String[] args){
-        // Bon appetit
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter n: ");
-        try {
-            n = Integer.parseInt(br.readLine());
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-        }
+        n = Utilities.readInt();
         System.out.printf("sum = %.10f\n", Sum(n));
     }
 }

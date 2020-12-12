@@ -1,7 +1,5 @@
 package ru.mtuci.progtech;
 
-import java.io.*;
-
 public class Lab2 {
     static double x, y, h;
     static int n;
@@ -15,13 +13,8 @@ public class Lab2 {
 
     // Уровень А.
     public static void main(String[] args) {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter n: ");
-        try {
-            n = Integer.parseInt(br.readLine());
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-        }
+        n = Utilities.readInt();
         h=(Lab1.B - Lab1.A) / (n - 1);
         for(x = Lab1.A; x <= Lab1.B; x += h) {
             y=Lab1.F(x);
