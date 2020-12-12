@@ -1,5 +1,9 @@
 package ru.mtuci.progtech;
 
+// Лабораторная работа No 1. Программирование циклических вычислительных процессов
+// Уровень А.
+// A17. Сумма таких значений функции, которые по модулю больше числа М.
+
 import java.lang.Math;
 import java.lang.System;
 
@@ -18,13 +22,11 @@ public class Lab1 {
         return x * Math.pow(Math.exp(x), x) + 2 * Math.sin(x) - Math.sqrt(Math.abs(Math.pow(x, 3) - Math.pow(x, 2)));
     }
 
-    // Уровень А.
     public static void main(String[] args) {
         System.out.println("Аргумент  Значение функции");
         for (x = A; x <= B; x += H) {
             y = F(x);
             System.out.printf("%10.4f %10.4f\n", x, y);
-            // Условие
             if (Math.abs(y) < M)
             {
                 sum += Math.abs(y);

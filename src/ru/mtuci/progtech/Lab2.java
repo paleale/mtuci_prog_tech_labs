@@ -1,17 +1,20 @@
 package ru.mtuci.progtech;
 
+// Лабораторная работа No 2. Проверка попадания точки в область на плоскости
+// Уровень А.
+// A17. (-6, -10), (-6, 3), (4, 3), (4, -10)
+
 public class Lab2 {
     static double x, y, h;
     static int n;
     static int count=0;
-    // A17. (-6, -10), (-6, 3), (4, 3), (4, -10)
     // Вершины:
     static int P1=-6;
     static int P2=4;
     static int P3=-10;
     static int P4=3;
 
-    // Уровень А.
+
     public static void main(String[] args) {
         System.out.println("Enter n: ");
         n = Utilities.readInt();

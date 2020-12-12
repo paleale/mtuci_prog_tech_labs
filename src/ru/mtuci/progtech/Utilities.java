@@ -15,7 +15,7 @@ public final class Utilities {
         } catch (IOException ioe) {
             ioe.printStackTrace();
         } catch (NumberFormatException e) {
-        System.err.println("Unable to format. " + e);
+            System.err.println("Unable to format. " + e);
         }
         return number;
     }
