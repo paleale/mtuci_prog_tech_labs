@@ -20,8 +20,7 @@ public class Lab5 {
     }
 
     // вывод массива на экран
-    public static void PrintArr(int[] a, int n)
-    {
+    public static void PrintArr(int[] a, int n) {
         for(int i = 0; i < n; i++) {
             System.out.printf("%d ", a[i]);
         }

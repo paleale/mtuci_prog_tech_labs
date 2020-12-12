@@ -9,7 +9,7 @@ public class Lab4 {
     static int number;
     static int count=0;
 
-    static boolean HasDigit(int number, int digit){
+    public static boolean HasDigit(int number, int digit){
         while(number > 0)
         {
             if(number % 10 == digit)
