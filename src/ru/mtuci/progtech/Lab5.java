@@ -4,7 +4,6 @@ package ru.mtuci.progtech;
 // Уровень А.
 // A17. В массиве целых чисел найти количество простых чисел.
 
-import java.lang.Math;
 import java.util.Random;
 
 public class Lab5 {
@@ -12,7 +11,7 @@ public class Lab5 {
     static int B=100;
 
     /* вывод массива на экран */
-    static void PrintArr(int a[], int n)
+    static void PrintArr(int[] a, int n)
     {
         int i;
         for(i = 0; i < n; i++) {
@@ -29,7 +28,8 @@ public class Lab5 {
         int i, count;
         // size of an array
         int N = 10;
-        int a[] = new int[N];
+        int[] a;
+        a = new int[N];
 
         /* инициализация элементов массива a случайными числами в диапазоне
         от A до B */
