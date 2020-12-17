@@ -27,8 +27,8 @@ public class Lab5 {
     }
 
     // принадлежит ли число к простым числам
-    static boolean IsSimple(int a) {
-        return a % 2 == 0;
+    public static boolean IsSimple(int a) {
+        return Math.abs(a) % 2 != 0;
     }
 
     public static void main(String[] args) {
