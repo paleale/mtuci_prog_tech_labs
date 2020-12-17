@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 public final class Utilities {
     static int number;
+    static String string;
 
     // reads input, and if it is an integer, returns it, else throws an exception
     public static int readInt() {
@@ -19,4 +20,15 @@ public final class Utilities {
         }
         return number;
     }
+
+    public static String readString() {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            string = br.readLine();
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+        return string;
+    }
+
 }
