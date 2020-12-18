@@ -36,9 +36,7 @@ public class Lab8 {
         int count;
         for(int i = 0; i < n; i++) {
             for(int j = count = 0; j < m; j++) {
-                if (Lab5.IsSimple(arr[i][j])) {
-                    count++;
-                }
+                if (Lab5.IsSimple(arr[i][j])) count++;
                 b[i] = count;
             }
         }
